@@ -1,0 +1,31 @@
+# ─── Core — PySpark ─────────────────────────────────────────────────────────
+pyspark==3.5.3
+
+# ─── Notebooks ───────────────────────────────────────────────────────────────
+jupyter==1.1.1
+jupyterlab==4.3.3
+notebook==7.3.2
+ipykernel==6.29.5
+nbstripout==0.8.1          # Limpiar outputs antes de commit
+
+# ─── Manipulación de datos (complemento a Spark) ─────────────────────────────
+pandas==2.2.3
+numpy==2.1.3
+pyarrow==18.1.0            # Backend Parquet / Arrow
+
+# ─── Lectura de archivos Excel (IGAE) ────────────────────────────────────────
+openpyxl==3.1.5
+xlrd==2.0.1
+
+# ─── Detección de encoding ───────────────────────────────────────────────────
+chardet==5.2.0
+
+# ─── Visualización ───────────────────────────────────────────────────────────
+matplotlib==3.9.3
+seaborn==0.13.2
+plotly==5.24.1
+
+# ─── Utilidades ──────────────────────────────────────────────────────────────
+tqdm==4.67.1               # Barras de progreso en ingesta de 85 ZIPs
+python-dotenv==1.0.1       # Variables de entorno (.env)
+requests==2.32.3           # Descargas desde fuentes públicas
