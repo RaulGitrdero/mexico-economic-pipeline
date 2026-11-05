@@ -12,8 +12,8 @@
 | Integrante | Rol principal | Rol secundario |
 |------------|--------------|---------------|
 | Cordero Villalobos, Raúl | Developer | Documentation Lead |
-| [Nombre 2] | Technical Reviewer | Developer |
-| [Nombre 3] | Documentation Lead | Technical Reviewer |
+| Sergio Delgadillo Domínguez| Technical Reviewer | Developer |
+| Seimandi Gollaz, Juan Manuel | Documentation Lead | Technical Reviewer |
 
 > Actualizar nombres según confirmación del equipo.
 
@@ -95,10 +95,10 @@ Ver `CONTRIBUTING.md` para las convenciones de ramas y commits.
 
 | Fuente | Responsable de ingesta | Responsable de revisión |
 |--------|----------------------|------------------------|
-| ENOE | Cordero Villalobos, Raúl | [Nombre 2] |
-| IGAE | [Nombre 2] | [Nombre 3] |
-| INPC | [Nombre 3] | Cordero Villalobos, Raúl |
-| SHCP Deuda | Cordero Villalobos, Raúl | [Nombre 2] |
+| ENOE | Cordero Villalobos, Raúl | Seimandi Gollaz, Juan Manuel |
+| IGAE | Seimandi Gollaz, Juan Manuel | Delgadillo Dominguez, Sergio |
+| INPC | Sergio Delgadillo Domínguez | Cordero Villalobos, Raúl |
+| SHCP Deuda | Cordero Villalobos, Raúl | Seimandi Gollaz, Juan Manuel |
 | Integración | Equipo completo | Todos |
 
 > Ajustar distribución según acuerdo del equipo.
