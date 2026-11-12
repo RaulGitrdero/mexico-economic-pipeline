@@ -2,7 +2,7 @@
 __pycache__/
 *.py[codz]
 *$py.class
-
+mexico-economic-pipeline.zip
 # C extensions
 *.so
 
