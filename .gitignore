@@ -1,6 +1,7 @@
 # ─── Datos crudos y procesados ───────────────────────────────────────────────
 data/raw/
 data/clean/
+data/enoe/
 output/
 
 # Excepciones: mantener los directorios vacíos en git
