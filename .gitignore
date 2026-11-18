@@ -64,3 +64,8 @@ Thumbs.db
 *.pem
 *.key
 secrets.yaml
+# Capa Plata y artefactos de Spark
+data/silver/
+!data/silver/.gitkeep
+*.crc
+_SUCCESS
