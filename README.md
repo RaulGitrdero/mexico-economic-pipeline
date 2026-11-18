@@ -88,6 +88,36 @@ Estado de referencia: contenido revisado de `dev` el **10 de noviembre de 2026**
 
 La Actividad 10 se concentra en organización, documentación y trazabilidad. Las optimizaciones y comparaciones de rendimiento se incorporarán conforme se implemente el pipeline.
 
+## Actividad 11 — Pipeline modular
+> **Actualización de estado.** La tabla anterior refleja el avance de la
+> Actividad 10. A continuación se describe el flujo incorporado en la
+> Actividad 11.
+
+Esta actividad agrega un flujo en PySpark para preparar un panel que
+combina los microdatos de la ENOE con el INPC y el IGAE por año y trimestre.
+Las series de ingresos y gastos de la SHCP se procesan en la etapa de ingesta.
+
+1. **Preparación.** Los CSV de la ENOE se extraen de los ZIP y se normalizan
+   a UTF-8 según el [instructivo](docs/normalizacion_utf8.md) del
+   [PR #6](https://github.com/RaulGitrdero/mexico-economic-pipeline/pull/6).
+2. **Ingesta y limpieza.** El [notebook de ingesta](notebooks/ingesta_general.ipynb)
+   genera los Parquet de INPC, IGAE y SHCP. El
+   [notebook de limpieza](notebooks/05_limpieza_enoe.ipynb) parte del Parquet
+   de ENOE, convierte tipos, elimina duplicados, filtra a la población de
+   15 años o más y trata los valores faltantes de ingresos y horas.
+3. **Integración y salida.** El [notebook de integración](notebooks/06_integracion.ipynb)
+   une los datos por año y trimestre y utiliza el INPC para ajustar los
+   ingresos por inflación. El panel tiene una fila por persona y trimestre
+   y se guarda en `data/silver/panel_enoe_inpc/`.
+
+La [guía de ejecución y evidencia](docs/evidencia_pipeline.md) describe
+las entradas y los controles de calidad. Queda pendiente documentar cómo
+se genera `data/raw/enoe/parquet/` a partir de los CSV normalizados y
+registrar los resultados de una ejecución completa.
+
+Los cambios de la actividad se revisan en el
+[PR #7](https://github.com/RaulGitrdero/mexico-economic-pipeline/pull/7).
+
 ## Documentación
 
 - [Arquitectura del pipeline](docs/arquitectura.md)
